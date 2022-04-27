@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MaxOn27/EasyDo/static/css/main.29ef3cc3.css",
+    "main.js": "/MaxOn27/EasyDo/static/js/main.790859d1.js",
+    "static/js/787.0eb27a79.chunk.js": "/MaxOn27/EasyDo/static/js/787.0eb27a79.chunk.js",
+    "index.html": "/MaxOn27/EasyDo/index.html",
+    "main.29ef3cc3.css.map": "/MaxOn27/EasyDo/static/css/main.29ef3cc3.css.map",
+    "main.790859d1.js.map": "/MaxOn27/EasyDo/static/js/main.790859d1.js.map",
+    "787.0eb27a79.chunk.js.map": "/MaxOn27/EasyDo/static/js/787.0eb27a79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29ef3cc3.css",
+    "static/js/main.790859d1.js"
+  ]
+}
