@@ -1,0 +1,13 @@
+ul {
+    list-style: none;
+    background-color: hsl(40, 100%, 70%);
+    width: 40%;
+    border: 5px solid hsl(360, 15%, 85%);
+    border-radius: 10px;
+    box-shadow: 1px 13px 22px -1px rgba(0,0,0,0.81);
+    min-height: 40%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}

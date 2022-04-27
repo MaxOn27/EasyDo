@@ -1,0 +1,74 @@
+:root {
+    --line-height: 1.5;
+    --text-color: #ffffff;
+    --text-hover-color: #039191;
+}
+
+.to-do-label {
+    position: relative;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.to-do-label > .split-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    font-family: 'Bebas Neue', cursive;
+    transition: color 0ms 200ms;
+}
+
+.to-do-label:hover > .split-text {
+    color: transparent;
+    user-select: none;
+    transition-delay: 0ms;
+}
+
+.to-do-label > .split-text::before,
+.to-do-label > .split-text::after {
+    position: absolute;
+    content: attr(data-text);
+    height: calc(.5em);
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    color: var(--text-color);
+    transition: color 200ms ease-in-out, transform 200ms ease-in-out;
+    user-select: none;
+}
+
+.to-do-label:hover > .split-text::before {
+    color: var(--text-hover-color);
+    transform: skewX(15deg);
+}
+.to-do-label:hover > .split-text::after {
+    color: white;
+    transform: skewX(15deg);
+}
+
+.to-do-label > .split-text::after {
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.to-do-label::before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    left: -5%;
+    top: calc(50% - 1px);
+    height: 2px;
+    transform: scale(0);
+    background-color: black;
+    border-radius: 20px;
+    z-index: 1;
+    transition: transform 200ms ease-in-out;
+}
+
+.to-do-label:hover::before{
+    transform: scale(1);
+}
